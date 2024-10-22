@@ -18,7 +18,7 @@ import AdminSideBar from "./components/AdminSideBar.jsx";
 import UserProfile from "./pages/UserProfile.jsx";
 import AdminCampaigns from "./pages/AdminCampaigns.jsx";
 import AdminTransactions from "./pages/AdminTransactions.jsx";
-
+import AdminProfile from "./pages/AdminProfile.jsx";
 
 const InitializeApp = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Quản lý trạng thái đăng nhập
@@ -77,6 +77,7 @@ const InitializeApp = () => {
                   <Route path="/admin/users" element={<AdminUser onLogout={handleLogout}/>} />
                   <Route path="/admin/campaigns" element={<AdminCampaigns onLogout={handleLogout}/>} />
                   <Route path="/admin/transactions" element={<AdminTransactions onLogout={handleLogout}/>} />
+                  <Route path="/admin/profile" element={<AdminProfile onLogout={handleLogout}/>} />
                 </Routes>
               </div>
             </>

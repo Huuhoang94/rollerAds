@@ -44,7 +44,7 @@ const AdminHeader = ({ routename, onLogout }) => {
 
   // Điều hướng đến trang Profile
   const handleProfileClick = () => {
-    navigate("/profile");
+    navigate("/admin/profile");
   };
 
   // Xử lý đăng xuất và điều hướng về trang Login
