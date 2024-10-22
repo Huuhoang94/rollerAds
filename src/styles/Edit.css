@@ -1,0 +1,48 @@
+.alsocustom {
+  background-color: black;
+  width: 400px;
+  margin-bottom: 30px;
+}
+.solarImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.flexgridcontainer {
+  display: flex;
+  align-items: center;
+}
+.kjksfd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fdfd {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.largoinone {
+  margin-top: 10px;
+}
+.dddone {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.dddtwo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pp {
+  font-size: 16px;
+  color: white !important;
+}
+.pp::placeholder {
+  font-size: 16px;
+  color: white !important;
+}

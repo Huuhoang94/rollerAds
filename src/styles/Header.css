@@ -1,0 +1,63 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(139, 139, 139);;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.headerLeftcontaienr {
+  display: flex;
+  align-items: center;
+}
+.iconContainerheader {
+  margin-right: 30px;
+}
+.creditcardionc {
+  width: 18px;
+  height: 18px;
+  color: #e4e1e6;
+}
+.titlehaeder {
+  font-weight: bold;
+  color: #e4e1e6;
+  font-size: 20px;
+}
+.headerRightcontaienr {
+  display: flex;
+  align-items: center;
+}
+.headerRightcontaienr > div {
+  margin-left: 20px;
+}
+.balanceContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.balanceContainer > img {
+  margin-right: 10px;
+}
+.balanceContainer > span {
+  color: #e4e1e6;
+  font-size: 15px;
+}
+.timecontainer {
+  color: #e4e1e6;
+  font-size: 14px;
+}
+.volteContainer,
+.userecontainer,
+.iconContainerheader {
+  border: 1px solid rgb(139, 139, 139);;
+  padding: 8px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

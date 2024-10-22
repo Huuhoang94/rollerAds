@@ -1,0 +1,21 @@
+.sommingConatiner {
+  border: 1px solid rgb(139, 139, 139);;
+  margin: 20px 0px;
+  border-radius: 5px;
+  background-color: #2b2c35;
+  color: #e4e1e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 20px;
+  font-size: 14px;
+}
+.tagline > span > a {
+  text-decoration: none;
+  color: unset;
+}
+.tagline > span {
+  color: #8ca7ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
