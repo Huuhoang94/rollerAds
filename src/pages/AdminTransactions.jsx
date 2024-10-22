@@ -12,7 +12,7 @@ const AdminTransactions = ({onLogout}) => {
     // Lấy danh sách chiến dịch từ backend
     const fetchTransactions = async () => {
       try {
-        const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_transaction", {
+        const response = await axios.get("https://roller-ads-3c2a4cbff3d9.herokuapp.com/admin_transaction", {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         console.log(response.data);
@@ -44,7 +44,7 @@ const AdminTransactions = ({onLogout}) => {
 
   const handleSave = async (Id) => {
     try {
-      const response = await axios.post(`https://roller-ads-app-247fc36661ce.herokuapp.com/admin-update-transaction/${Id}`, editedData, {
+      const response = await axios.post(`https://roller-ads-3c2a4cbff3d9.herokuapp.com/admin-update-transaction/${Id}`, editedData, {
         withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
       // Cập nhật dữ liệu trong state

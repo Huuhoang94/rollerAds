@@ -33,7 +33,7 @@ const UserProfile = ({onLogout}) => {
     // Gửi yêu cầu lấy thông tin người dùng
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-profile/${userEmail}`, {
+        const response = await axios.get(`https://roller-ads-3c2a4cbff3d9.herokuapp.com/user-profile/${userEmail}`, {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         console.log(response.data);
@@ -71,7 +71,7 @@ const UserProfile = ({onLogout}) => {
       const userEmail = localStorage.getItem("userEmail");
 
       // Gửi yêu cầu đến backend để cập nhật mật khẩu
-      const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/change-password", {
+      const response = await axios.post("https://roller-ads-3c2a4cbff3d9.herokuapp.com/change-password", {
         email: userEmail,
         oldPassword,
         newPassword,
@@ -89,7 +89,7 @@ const UserProfile = ({onLogout}) => {
   const handleSaveProfile = async () => {
     try {
       //userData.email = userEmail;
-      const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/update-profile", userData, {
+      const response = await axios.post("https://roller-ads-3c2a4cbff3d9.herokuapp.com/update-profile", userData, {
         withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
       alert(response.data.message);

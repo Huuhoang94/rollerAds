@@ -12,7 +12,7 @@ const AdminCampaigns = ({onLogout}) => {
     // Lấy danh sách chiến dịch từ backend
     const fetchCampaigns = async () => {
       try {
-        const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_campaign", {
+        const response = await axios.get("https://roller-ads-3c2a4cbff3d9.herokuapp.com/admin_campaign", {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         setCampaigns(response.data[0]);
@@ -48,7 +48,7 @@ const AdminCampaigns = ({onLogout}) => {
 
   const handleSave = async (campaignId) => {
     try {
-      const response = await axios.post(`https://roller-ads-app-247fc36661ce.herokuapp.com/admin-update-campaign/${campaignId}`, editedData, {
+      const response = await axios.post(`https://roller-ads-3c2a4cbff3d9.herokuapp.com/admin-update-campaign/${campaignId}`, editedData, {
         withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
       // Cập nhật dữ liệu trong state

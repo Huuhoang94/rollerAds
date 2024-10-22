@@ -9,7 +9,7 @@ const AdminUser = ({onLogout}) => {
     // Lấy danh sách người dùng từ backend
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_user", {
+        const response = await axios.get("https://roller-ads-3c2a4cbff3d9.herokuapp.com/admin_user", {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         }); 
         console.log(response.data);

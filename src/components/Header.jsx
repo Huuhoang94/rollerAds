@@ -25,7 +25,7 @@ const Header = ({ routename, onLogout }) => {
     // Gửi yêu cầu lấy thông tin người dùng
     const fetchUserBalance = async () => {
       try {
-        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-balance/${userEmail}`, {
+        const response = await axios.get(`https://roller-ads-3c2a4cbff3d9.herokuapp.com/user-balance/${userEmail}`, {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         setUserBalance(response.data[0]);

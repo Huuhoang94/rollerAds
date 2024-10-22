@@ -42,7 +42,7 @@ const Finance = ({onLogout}) => {
   };
   const fetchUserTransactions = async () => {
     try {
-      const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-transaction/${email}`, {
+      const response = await axios.get(`https://roller-ads-3c2a4cbff3d9.herokuapp.com/user-transaction/${email}`, {
         withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
       console.log(response.data);
@@ -54,7 +54,7 @@ const Finance = ({onLogout}) => {
 
   const fetchUserWalletId = async () => {
     try {
-      const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-walletId/${email}`, {
+      const response = await axios.get(`https://roller-ads-3c2a4cbff3d9.herokuapp.com/user-walletId/${email}`, {
         withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
       console.log(response.data);
@@ -91,7 +91,7 @@ const Finance = ({onLogout}) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/new-transaction", {
+      const response = await axios.post("https://roller-ads-3c2a4cbff3d9.herokuapp.com/new-transaction", {
         email,
         paymentMethod,
         amount,
