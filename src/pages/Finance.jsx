@@ -7,6 +7,7 @@ import InstaLogo from "../assets/insta.svg";
 import axios from "axios";
 import bank_logo from "../assets/bank_logo.svg";
 import QRcode from "../assets/QRcode.svg";
+import "../styles/finance.css";
 import {
   ChartBarSquareIcon,
   PauseIcon,
@@ -275,9 +276,7 @@ const Finance = ({onLogout}) => {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <table>
+        <table className="level-table">
             <tr>
                 <th class="green">what you get</th>
                 <th class="green">Green Level</th>
@@ -627,6 +626,8 @@ const styles = {
     color: '#00b0ff',
     textDecoration: 'none',
   },
+  
 };
+
 
 export default Finance;

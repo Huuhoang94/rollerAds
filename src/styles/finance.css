@@ -1,0 +1,44 @@
+.level-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.level-table th, td {
+    border: 1px solid #555; /* Đổi màu viền cho hợp với nền tối */
+    padding: 8px;
+    text-align: center;
+}
+
+.level-table th {
+    background-color: #333; /* Màu nền tối hơn cho phần tiêu đề */
+    color: #f2f2f2; /* Chữ sáng để hiển thị tốt trên nền tối */
+}
+
+.green { 
+    background-color: #356d35; /* Màu xanh đậm hơn cho phù hợp với chế độ tối */
+    color: #d4ffd4; /* Chữ sáng để hiển thị tốt hơn trên nền xanh */
+}
+
+.silver { 
+    background-color: #444; /* Màu xám đậm hơn cho nền tối */
+    color: #f2f2f2; /* Chữ sáng cho tương phản tốt */
+}
+
+.gold { 
+    background-color: #594b25; /* Màu vàng đậm cho nền tối */
+    color: #ffe4a1; /* Chữ sáng vàng nhạt */
+}
+
+.platinum { 
+    background-color: #666; /* Màu xám đậm cho nền platinum */
+    color: #f2f2f2; /* Chữ sáng cho dễ nhìn */
+}
+
+.check { 
+    color: #7fff7f; /* Xanh lá sáng hơn để hiển thị rõ trên nền tối */
+}
+
+.cross { 
+    color: #ff7f7f; /* Màu đỏ sáng hơn cho dễ nhìn trên nền tối */
+}
