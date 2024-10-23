@@ -15,22 +15,22 @@
     color: #f2f2f2; /* Chữ sáng để hiển thị tốt trên nền tối */
 }
 
-.green { 
+.level-table .green { 
     background-color: #356d35; /* Màu xanh đậm hơn cho phù hợp với chế độ tối */
     color: #d4ffd4; /* Chữ sáng để hiển thị tốt hơn trên nền xanh */
 }
 
-.silver { 
+.level-table .silver { 
     background-color: #444; /* Màu xám đậm hơn cho nền tối */
     color: #f2f2f2; /* Chữ sáng cho tương phản tốt */
 }
 
-.gold { 
+.level-table .gold { 
     background-color: #594b25; /* Màu vàng đậm cho nền tối */
     color: #ffe4a1; /* Chữ sáng vàng nhạt */
 }
 
-.platinum { 
+.level-table .platinum { 
     background-color: #666; /* Màu xám đậm cho nền platinum */
     color: #f2f2f2; /* Chữ sáng cho dễ nhìn */
 }
