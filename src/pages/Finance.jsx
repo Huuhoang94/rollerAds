@@ -275,7 +275,7 @@ const Finance = ({onLogout}) => {
         <br />
         <br />
         <br />
-        <table className="campaignsTable">
+        <table className="level-table">
             <tr>
                 <th>What you get</th>
                 <th class="green">Green Level</th>
