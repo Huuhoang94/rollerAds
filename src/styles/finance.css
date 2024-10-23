@@ -4,7 +4,7 @@
     margin: 20px 0;
 }
 
-.level-table th, td {
+.level-table th, .level-table td {
     border: 1px solid #555; /* Đổi màu viền cho hợp với nền tối */
     padding: 8px;
     text-align: center;
@@ -35,10 +35,10 @@
     color: #f2f2f2; /* Chữ sáng cho dễ nhìn */
 }
 
-.check { 
+.level-table .check { 
     color: #7fff7f; /* Xanh lá sáng hơn để hiển thị rõ trên nền tối */
 }
 
-.cross { 
+.level-table .cross { 
     color: #ff7f7f; /* Màu đỏ sáng hơn cho dễ nhìn trên nền tối */
 }
