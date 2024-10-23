@@ -368,6 +368,105 @@ const Finance = ({onLogout}) => {
             </table>
           </div>          
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th class="green">what you get</th>
+                <th class="green">Green Level</th>
+                <th class="silver">Silver Level</th>
+                <th class="gold">Gold Level</th>
+                <th class="platinum">Platinum Level</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>0 - $500</td>
+                <td>$500 - $5000</td>
+                <td>$5000 - $15000</td>
+                <td>$15000 +</td>
+            </tr>
+            <tr>
+                <td>Special offers from our partners</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Access to API</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Low balance SMS notification</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>New campaigns per day</td>
+                <td>20</td>
+                <td>40</td>
+                <td>40</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Priority campaign moderation</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Personal manager</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Priority support line via Live Chat</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>IP Blacklisting</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Collecting multiple audiences from 1 campaign (managed)</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Priority access to new features</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Temporary credit line</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+        </table>
         <div className="iconsContainerslgoos" style={{ gap: "30px" }}>
           <br />
           <br />
