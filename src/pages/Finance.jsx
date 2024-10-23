@@ -134,6 +134,7 @@ const Finance = ({onLogout}) => {
       </div>
       {/* Payment Interface */}
       {activeTab === "Top Up" && (
+        <>
               <div style={styles.container}>
               <h2 style={{textAlign: "center"}}>Select Payment Method</h2>
               <br></br>
@@ -270,104 +271,6 @@ const Finance = ({onLogout}) => {
                 <p>Phone: <a href="tel:+6287864909872" style={styles.contactLink}>+62 878-6490-9872</a></p>
               </div>
             </div>
-      )}
-      {activeTab === "History" && (
-        <>
-        <div className="compainContainermain">
-          <div className="compainsheader">
-            <h3>List of transactions</h3>
-            <img src={HeaderIcon} alt="" />
-          </div>
-          <div className="compainstableContainer" style={{ minHeight: "300px" }}>
-            <table className="campaignsTable">
-              <thead>
-                <tr>
-                  <th>
-                    <div className="tablesingledivvv">
-                      Date <ArrowDownIcon className="hhhh" />
-                    </div>
-                  </th>
-                  <th>
-                    <div className="tablesingledivvv">
-                      Payment <ArrowDownIcon className="hhhh" />
-                    </div>
-                  </th>
-                  <th>
-                    <div className="tablesingledivvv">
-                      Description <ArrowDownIcon className="hhhh" />
-                    </div>
-                  </th>
-                  <th>
-                    <div className="tablesingledivvv">
-                      Type <ArrowDownIcon className="hhhh" />
-                    </div>
-                  </th>
-                  <th>
-                    <div className="tablesingledivvv">
-                      Status <ArrowDownIcon className="hhhh" />
-                    </div>
-                  </th>
-                  <th>
-                    <div className="tablesingledivvv">
-                      TransactionID <ArrowDownIcon className="hhhh" />
-                    </div>
-                  </th>
-                  <th>
-                    <div className="tablesingledivvv">
-                      WalletID <ArrowDownIcon className="hhhh" />
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="ccccctablebody">
-                <br />
-                {userTransactions.map((transaction) => (
-                <>
-                  <tr key={transaction.id}>
-                    <td style={styles.tableCell}>{transaction.date}</td>
-                    <td style={styles.tableCell}>{transaction.payment}</td>
-                    <td style={styles.tableCell}>{transaction.description}</td>
-                    <td style={styles.tableCell}>{transaction.type}</td>
-                    <td style={styles.tableCell}>
-                      <p
-                        mycuststylebar={transaction.status}
-                        className="mycompainlargetitlt"
-                        style={{
-                          backgroundColor: 
-                          transaction.status === "pending" ? "#574500" :
-                            //campaign.status === "active" ? "#00533e" :
-                            transaction.status === "success" ? "green" :
-                            transaction.status === "failed" ? "red" : "",
-
-                          color: "white",
-                            //campaign.status === "completed" ? "#b1deeb" :
-                            //campaign.status === "active" ? "#0ece9e" :
-                            //campaign.status === "paused" ? "white" :
-                            //campaign.status === "pending" ? "white" : "",
-
-                          padding: "5px 8px", // Giá trị padding là giống nhau, không cần điều kiện
-
-                          borderRadius: "5px", // Tương tự, giá trị này là giống nhau
-
-                          fontSize: "14px", // Giá trị fontSize là giống nhau
-                          textAlign: "center",
-                        }}
-                        >
-                        {transaction.status}
-                      </p>
-                      
-                    </td>
-                    <td style={styles.tableCell}>{transaction.transactionID}</td>
-                    <td style={styles.tableCell}>{transaction.walletID}</td>           
-                  </tr>
-                </>
-              ))}
-                
-              </tbody>
-              <footer className="tablefooter"></footer>
-            </table>
-          </div>          
-        </div>
         <br />
         <br />
         <br />
@@ -467,6 +370,106 @@ const Finance = ({onLogout}) => {
                 <td class="check">✔</td>
             </tr>
         </table>
+        </>
+      )}
+      {activeTab === "History" && (
+        <>
+        <div className="compainContainermain">
+          <div className="compainsheader">
+            <h3>List of transactions</h3>
+            <img src={HeaderIcon} alt="" />
+          </div>
+          <div className="compainstableContainer" style={{ minHeight: "300px" }}>
+            <table className="campaignsTable">
+              <thead>
+                <tr>
+                  <th>
+                    <div className="tablesingledivvv">
+                      Date <ArrowDownIcon className="hhhh" />
+                    </div>
+                  </th>
+                  <th>
+                    <div className="tablesingledivvv">
+                      Payment <ArrowDownIcon className="hhhh" />
+                    </div>
+                  </th>
+                  <th>
+                    <div className="tablesingledivvv">
+                      Description <ArrowDownIcon className="hhhh" />
+                    </div>
+                  </th>
+                  <th>
+                    <div className="tablesingledivvv">
+                      Type <ArrowDownIcon className="hhhh" />
+                    </div>
+                  </th>
+                  <th>
+                    <div className="tablesingledivvv">
+                      Status <ArrowDownIcon className="hhhh" />
+                    </div>
+                  </th>
+                  <th>
+                    <div className="tablesingledivvv">
+                      TransactionID <ArrowDownIcon className="hhhh" />
+                    </div>
+                  </th>
+                  <th>
+                    <div className="tablesingledivvv">
+                      WalletID <ArrowDownIcon className="hhhh" />
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="ccccctablebody">
+                <br />
+                {userTransactions.map((transaction) => (
+                <>
+                  <tr key={transaction.id}>
+                    <td style={styles.tableCell}>{transaction.date}</td>
+                    <td style={styles.tableCell}>{transaction.payment}</td>
+                    <td style={styles.tableCell}>{transaction.description}</td>
+                    <td style={styles.tableCell}>{transaction.type}</td>
+                    <td style={styles.tableCell}>
+                      <p
+                        mycuststylebar={transaction.status}
+                        className="mycompainlargetitlt"
+                        style={{
+                          backgroundColor: 
+                          transaction.status === "pending" ? "#574500" :
+                            //campaign.status === "active" ? "#00533e" :
+                            transaction.status === "success" ? "green" :
+                            transaction.status === "failed" ? "red" : "",
+
+                          color: "white",
+                            //campaign.status === "completed" ? "#b1deeb" :
+                            //campaign.status === "active" ? "#0ece9e" :
+                            //campaign.status === "paused" ? "white" :
+                            //campaign.status === "pending" ? "white" : "",
+
+                          padding: "5px 8px", // Giá trị padding là giống nhau, không cần điều kiện
+
+                          borderRadius: "5px", // Tương tự, giá trị này là giống nhau
+
+                          fontSize: "14px", // Giá trị fontSize là giống nhau
+                          textAlign: "center",
+                        }}
+                        >
+                        {transaction.status}
+                      </p>
+                      
+                    </td>
+                    <td style={styles.tableCell}>{transaction.transactionID}</td>
+                    <td style={styles.tableCell}>{transaction.walletID}</td>           
+                  </tr>
+                </>
+              ))}
+                
+              </tbody>
+              <footer className="tablefooter"></footer>
+            </table>
+          </div>          
+        </div>
+        
         <div className="iconsContainerslgoos" style={{ gap: "30px" }}>
           <br />
           <br />
