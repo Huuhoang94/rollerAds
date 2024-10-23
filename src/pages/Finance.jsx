@@ -7,7 +7,7 @@ import InstaLogo from "../assets/insta.svg";
 import axios from "axios";
 import bank_logo from "../assets/bank_logo.svg";
 import QRcode from "../assets/QRcode.svg";
-import "../styles/finance.css";
+import "../styles/compainsContainer.css";
 import {
   ChartBarSquareIcon,
   PauseIcon,
