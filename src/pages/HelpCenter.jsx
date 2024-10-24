@@ -35,7 +35,8 @@ const HelpCenter = ({onLogout}) => {
             {"  "}
             for Android and iOS. Performs strong on our traffic.
           </p>
-          <p style={{ cursor: "pointer" }}>Dismiss</p>
+          <p style={{ cursor: "pointer" }}>Dismisss</p>
+
         </div>
       {/* LiveChat noscript for non-JS users */}
       <noscript>
