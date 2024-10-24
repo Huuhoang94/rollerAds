@@ -215,7 +215,7 @@ const Reprots = ({onLogout}) => {
 
   // Effect to set document title
   useEffect(() => {
-    document.title = "Reports Campaings . RollerAds";
+    document.title = "Reports Campaigns . RollerAds";
   }, []);
 
   return (

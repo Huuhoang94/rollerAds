@@ -13,7 +13,6 @@ const Header = ({ routename, onLogout }) => {
   const [userBalance, setUserBalance] = useState("");
 
   useEffect(() => {
-    document.title = "Profile . RollerAds";
     const userEmail = localStorage.getItem("userEmail"); // Lấy email từ localStorage
 
     if (!userEmail) {
@@ -40,7 +39,7 @@ const Header = ({ routename, onLogout }) => {
 
   useEffect(() => {
     // Function to update current time every second
-    document.title= "Campaings . RollerAds"
+    document.title= "RollerAds"
     
     const updateTime = () => {
       const date = new Date();

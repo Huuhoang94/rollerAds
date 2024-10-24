@@ -6,7 +6,7 @@ import CompainContainer from "./components/compainsContainer";
 import { Link } from "react-router-dom";
 const App = ({ onLogout }) => {
   useEffect(() => {
-    document.title = "Rates . RollerAds";
+    document.title = "Campaigns . RollerAds";
   }, []);
   return (
     <div className="maincontainer">

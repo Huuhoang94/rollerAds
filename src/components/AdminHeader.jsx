@@ -13,7 +13,7 @@ const AdminHeader = ({ routename, onLogout }) => {
 
   useEffect(() => {
     // Function to update current time every second
-    document.title= "Campaings . RollerAds"
+    document.title= "RollerAds"
     
     const updateTime = () => {
       const date = new Date();
